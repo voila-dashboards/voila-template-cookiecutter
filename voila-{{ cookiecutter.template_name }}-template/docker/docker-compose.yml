@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  voila:
+    container_name: voila-{{ cookiecutter.template_name }}-template
+    image: voila-{{ cookiecutter.template_name }}-template
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: always
+    volumes:
+      - ../share/jupyter/voila/templates:/root/.local/share/jupyter/voila/templates
+      - ../example-notebooks:/home/voila/example-notebooks
+    ports:
+      - 8866:8866
+    command: "pipenv run voila --template {{ cookiecutter.template_name }} example-notebooks"

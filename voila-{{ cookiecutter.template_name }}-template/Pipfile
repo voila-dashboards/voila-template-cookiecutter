@@ -5,9 +5,6 @@ verify_ssl = true
 
 [dev-packages]
 voila = "*"
-jupyter = "*"
-pandas = "*"
-matplotlib = "*"
 
 [packages]
 

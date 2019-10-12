@@ -7,7 +7,7 @@ for root, dirs, files in os.walk('share'):
     data_files.append((root, root_files))
 
 setup_args = {
-    'name': 'voila-{{ cookiecutter.template_name }}',
+    'name': 'voila-{{ cookiecutter.template_name }}-template',
     'version': '0.0.1',
     'packages': [],
     'data_files': data_files,

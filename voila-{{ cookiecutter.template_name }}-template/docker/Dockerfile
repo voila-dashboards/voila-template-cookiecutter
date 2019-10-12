@@ -9,5 +9,3 @@ RUN pip install pipenv
 
 COPY Pipfile Pipfile.lock ./
 RUN pipenv install --dev
-
-WORKDIR /home/voila/notebooks
