@@ -1,0 +1,9 @@
+{
+  "template_name": "magic-template-name",
+  "package_description": "This is a description",
+  "package_author": "your-name-here",
+  "package_url": "https://your-package-url.com",
+  "_copy_without_render": [
+        "*.tpl"
+    ]
+}
